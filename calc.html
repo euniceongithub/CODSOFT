@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+<div class="box">
+        <input type="text" id="display" readonly>
+    <div class="around-buttons">
+        <div class="buttons">
+            <button onclick="appendToDisplay('7')" class="circle">7</button>
+            <button onclick="appendToDisplay('8')" class="circle">8</button>
+            <button onclick="appendToDisplay('9')" class="circle">9</button>
+            <button onclick="appendToDisplay('+')" class="circle operator">+</button>
+            <button onclick="appendToDisplay('4')" class="circle">4</button>
+            <button onclick="appendToDisplay('5')" class="circle">5</button>
+            <button onclick="appendToDisplay('6')" class="circle">6</button>
+            <button onclick="appendToDisplay('-')" class="circle operator">-</button>
+            <button onclick="appendToDisplay('1')" class="circle">1</button>
+            <button onclick="appendToDisplay('2')" class="circle">2</button>
+            <button onclick="appendToDisplay('3')" class="circle">3</button>
+            <button onclick="appendToDisplay('*')" class="circle operator">×</button>
+            <button onclick="appendToDisplay('0')" class="circle">0</button>
+            <button onclick="appendToDisplay('.')" class="circle">.</button>
+            <button onclick="clearDisplay()" class="circle">C</button>
+            <button onclick="appendToDisplay('/')" class="circle operator">÷</button>
+            <button onclick="calculateResult()" class="circle operator">=</button>
+
+        </div>
+    </div>
+</div>
+    <script src="./calc.js"></script>
+</body>
+</html>
